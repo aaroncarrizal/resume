@@ -9,10 +9,17 @@ const browser = await puppeteer.launch();
 const page = await browser.newPage();
 
 // Navigate the page to a URL.
-// await page.goto('https://developer.chrome.com/');
 await page.goto('file://' + __dirname + '/resume.html', { waitUntil: 'networkidle2' });
 // Set screen size.
-await page.setViewport({width: 1080, height: 1024});
-await page.pdf({ path: 'cv.pdf', format: 'A4' });
+await page.setViewport({ width: 1632, height: 2112 });
+await page.pdf({
+    path: 'cv.pdf', format: 'letter', printBackground: true,
+    margin: {
+        top: '0mm',
+        bottom: '0mm',
+        left: '0mm',
+        right: '0mm',
+    },
+});
 
 await browser.close();
