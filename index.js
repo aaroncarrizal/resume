@@ -13,7 +13,7 @@ await page.goto('file://' + __dirname + '/resume.html', { waitUntil: 'networkidl
 // Set screen size.
 await page.setViewport({ width: 1632, height: 2112 });
 await page.pdf({
-    path: 'cv.pdf', format: 'letter', printBackground: true,
+    path: 'Aarón_Mishael_Carrizal_Méndez-Web_Developer.pdf', format: 'letter', printBackground: true,
     margin: {
         top: '0mm',
         bottom: '0mm',
