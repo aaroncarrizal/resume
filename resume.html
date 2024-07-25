@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currículum Vitae</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <style>
         @media print {
             * {
@@ -13,23 +18,27 @@
                 print-color-adjust: exact;
             }
         }
+
+        body {
+            font-family: "Poppins";
+        }
     </style>
 </head>
 
 <body class="bg-white p-4 max-w-screen max-h-screen overflow-hidden">
-    <div class="grid grid-cols-12">
+    <div class="grid grid-cols-12 mb-2">
         <div class="col-span-3">
-            <img src="profile_picture.jpg" alt="profile_picture" class="object-cover rounded-lg w-48">
+            <img src="profile_picture.jpg" alt="profile_picture" class="object-cover rounded-lg h-24 mb-1">
             <p class="font-bold text-sm">Full stack Web Developer</p>
             <a class="text-xs m-0" href="mailto:aaronk4572@gmail.com">aaronk4572@gmail.com</a>
             <p class="text-xs">+52 444 858 5571</p>
             <p class="text-xs">San Luis Potosí, México</p>
         </div>
         <div class="col-span-9">
-            <h1 class="font-bold text-3xl">Aarón Mishael Carrizal Méndez</h1>
+            <h1 class="font-bold text-3xl text-center">Aarón Mishael Carrizal Méndez</h1>
             <div class="rounded-2xl bg-gray-200 px-4 py-2">
                 <h2 class="text-2xl font-bold">Profile</h2>
-                <p class="text-xs text-justify"><strong>Passionate</strong> Web Developer with 2 years of Software Development
+                <p class="text-xs "><strong>Passionate</strong> Web Developer with 2 years of Software Development
                     Experience. Proven implementation experience on projects of all sizes, working independently or with
                     a team. Perfectionist with an attention to detail, resulting in high-quality and meticulously
                     prepared final deliverables. Versatile and proficient in a variety of web technologies. Always
@@ -38,92 +47,129 @@
             </div>
         </div>
     </div>
-    <div class="grid grid-cols-12">
-        <div class="col-span-7 px-2">
+    <div class="grid grid-cols-12 gap-2">
+        <div class="col-span-8 px-1">
             <h2 class="text-2xl font-bold">Employment History</h2>
-            <!-- Job -->
-            <div>
-                <h3 class="text-l bg-gray-200 rounded-lg p-1">Full Stack Web Developer at D4T Technologies, San Luis Potosí</h3>
-                <h4 class="text-l">01/2024—Present</h4>
+            <!-- D4T -->
+            <div class="mt-1 mb-2">
+                <h3 class="text-l font-bold bg-gray-200 rounded-lg p-1">Full Stack Web Developer at D4T Technology,
+                    San Luis
+                    Potosí</h3>
+                <h4 class="text-l">01/2024 — Present</h4>
                 <ul class="list-disc text-xs">
-                    <li>
-                        Led the planning and execution of a detailed project roadmap,
-                        identifying and addressing potential roadblocks or bottlenecks in the
-                        development process.
+                    <li class="mb-0.5">
+                        Successfully delivered project milestones by leading the planning and
+                        execution of a detailed project roadmap, and identifying and addressing potential roadblocks or
+                        bottlenecks in the development process.
+                    </li>
+                    <li class="mb-0.5">
+                        Improved user satisfaction and engagement by creating a user-friendly and visually appealing
+                        interface for a web application, ensuring smooth navigation on different devices and platforms.
                     </li>
                     <li>
-                        Created a user-friendly and visually appealing interface for a web
-                        application, ensuring smooth navigation on different devices and
-                        platforms.
-                    </li>
-                    <li>
-                        Worked closely with different teams to integrate various features
-                        and elements, promoting collaboration throughout the development
-                        process.
+                        Successfully launched a scalable and resilient application by designing and implementing the
+                        application using microservice architecture, ensuring modularity, and efficient inter-service
+                        communication.
                     </li>
                 </ul>
-                <h4 class="text-l">Main Technologies</h4>
-                <div class="flex justify-between items-center px-12">
-                    <div class="bg-gray-200 rounded-full p-1">
-                        <p class="w-8 text-center text-xs">Vue</p>
+                <h4 class="text-l font-bold">Main Technologies</h4>
+                <div class="flex justify-between items-center mt-0.5">
+                    <div class="bg-gray-200 rounded-full py-1 px-2">
+                        <p class="w-auto text-center text-xs">Vue.js</p>
                     </div>
-                    <div class="bg-gray-200 rounded-full p-1">
-                        <p class="w-8 text-center text-xs">Vue</p>
+                    <div class="bg-gray-200 rounded-full py-1 px-2">
+                        <p class="w-auto text-center text-xs">Tailwind CSS</p>
                     </div>
-                    <div class="bg-gray-200 rounded-full p-1">
-                        <p class="w-8 text-center text-xs">Vue</p>
+                    <div class="bg-gray-200 rounded-full py-1 px-2">
+                        <p class="w-auto text-center text-xs">TypeScript</p>
                     </div>
-                    <div class="bg-gray-200 rounded-full p-1">
-                        <p class="w-8 text-center text-xs">Vue</p>
+                    <div class="bg-gray-200 rounded-full py-1 px-2">
+                        <p class="w-auto text-center text-xs">Laravel</p>
+                    </div>
+                    <div class="bg-gray-200 rounded-full py-1 px-2">
+                        <p class="w-auto text-center text-xs">Node.js</p>
                     </div>
                 </div>
             </div>
-            <!-- Job -->
-            <div>
-                <h3 class="text-l bg-gray-200 rounded-lg p-1">Full Stack Web Developer at D4T Technologies, San Luis Potosí</h3>
-                <h4 class="text-l">01/2024—Present</h4>
+            <!-- Fyware -->
+            <div class="mt-1 mb-2">
+                <h3 class="text-l font-bold bg-gray-200 rounded-lg p-1">Full Stack Web Developer at Fyware, San Luis
+                    Potosí</h3>
+                <h4 class="text-l">06/2022 — 06/2023</h4>
                 <ul class="list-disc text-xs">
-                    <li>
-                        Led the planning and execution of a detailed project roadmap,
-                        identifying and addressing potential roadblocks or bottlenecks in the
-                        development process.
+                    <li class="mb-0.5">
+                        Facilitated data exchange and integration by designing, implementing, and consuming REST APIs,
+                        resulting in more efficient communication between front-end and back-end systems.
+                    </li>
+                    <li class="mb-0.5">
+                        Accelerated project completion by collaborating with multiple technology stacks,
+                        infrastructures, and cross-functional teams to develop comprehensive web applications.
                     </li>
                     <li>
-                        Created a user-friendly and visually appealing interface for a web
-                        application, ensuring smooth navigation on different devices and
-                        platforms.
-                    </li>
-                    <li>
-                        Worked closely with different teams to integrate various features
-                        and elements, promoting collaboration throughout the development
-                        process.
+                        Contributed to the successful launch and maintenance of multiple web applications by planning,
+                        developing, testing, deploying, and maintaining features, ensuring reliability and user
+                        satisfaction.
                     </li>
                 </ul>
+                <h4 class="text-l font-bold">Main Technologies</h4>
+                <div class="flex justify-between items-center mt-0.5">
+                    <div class="bg-gray-200 rounded-full py-1 px-2">
+                        <p class="w-auto text-center text-xs">Vue.js</p>
+                    </div>
+                    <div class="bg-gray-200 rounded-full py-1 px-2">
+                        <p class="w-auto text-center text-xs">Express.js</p>
+                    </div>
+                    <div class="bg-gray-200 rounded-full py-1 px-2">
+                        <p class="w-auto text-center text-xs">MongoDB</p>
+                    </div>
+                    <div class="bg-gray-200 rounded-full py-1 px-2">
+                        <p class="w-auto text-center text-xs">.NET</p>
+                    </div>
+                    <div class="bg-gray-200 rounded-full py-1 px-2">
+                        <p class="w-auto text-center text-xs">Python</p>
+                    </div>
+                </div>
             </div>
-            <!-- Job -->
-            <div>
-                <h3 class="text-l bg-gray-200 rounded-lg p-1">Full Stack Web Developer at D4T Technologies, San Luis Potosí</h3>
-                <h4 class="text-l">01/2024—Present</h4>
+            <!-- Intern -->
+            <div class="mt-1 mb-2">
+                <h3 class="text-l font-bold bg-gray-200 rounded-lg p-1">Intern at UASLP, San Luis Potosí</h3>
+                <h4 class="text-l">12/2021—06/2022</h4>
                 <ul class="list-disc text-xs">
-                    <li>
-                        Led the planning and execution of a detailed project roadmap,
-                        identifying and addressing potential roadblocks or bottlenecks in the
-                        development process.
+                    <li class="mb-0.5">
+                        Contributed to the development of internal web-based systems, enhancing functionality and user
+                        experience by utilizing PHP, HTML, JavaScript, and CSS.
+                    </li>
+                    <li class="mb-0.5">
+                        Assisted in the configuration and deployment of dedicated Windows servers, ensuring reliable and
+                        efficient operation for internal applications.
                     </li>
                     <li>
-                        Created a user-friendly and visually appealing interface for a web
-                        application, ensuring smooth navigation on different devices and
-                        platforms.
-                    </li>
-                    <li>
-                        Worked closely with different teams to integrate various features
-                        and elements, promoting collaboration throughout the development
-                        process.
+                        Provided maintenance and support for corporate workstations, resolving technical issues promptly
+                        to minimize downtime and ensure smooth operation for employees.
                     </li>
                 </ul>
+                <h4 class="text-l font-bold">Main Technologies</h4>
+                <div class="flex justify-between items-center mt-0.5">
+                    <div class="bg-gray-200 rounded-full py-1 px-2">
+                        <p class="w-auto text-center text-xs">HTML</p>
+                    </div>
+                    <div class="bg-gray-200 rounded-full py-1 px-2">
+                        <p class="w-auto text-center text-xs">CSS</p>
+                    </div>
+                    <div class="bg-gray-200 rounded-full py-1 px-2">
+                        <p class="w-auto text-center text-xs">JavaScript</p>
+                    </div>
+                    <div class="bg-gray-200 rounded-full py-1 px-2">
+                        <p class="w-auto text-center text-xs">PHP</p>
+                    </div>
+                    <div class="bg-gray-200 rounded-full py-1 px-2">
+                        <p class="w-auto text-center text-xs">MySQL</p>
+                    </div>
+                </div>
             </div>
+
         </div>
-        <div class="col-span-5">
+        <div class="col-span-4">
             <div class="bg-gray-200 rounded-2xl px-4 py-2 mb-2">
                 <h2 class="text-2xl font-bold">Hard Skills</h2>
             </div>
