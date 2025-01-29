@@ -1,18 +1,17 @@
 {
-  "name": "resume",
-  "version": "1.0.0",
-  "main": "index.js",
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node index.js"
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
   "dependencies": {
-    "puppeteer": "^22.13.1",
-    "tailwindcss": "^3.4.6"
-  },
-  "type": "module"
+    "nuxt": "^3.15.4",
+    "vue": "latest",
+    "vue-router": "latest"
+  }
 }
