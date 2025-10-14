@@ -1,19 +1,28 @@
 import puppeteer from 'puppeteer';
-import { fileURLToPath } from 'url';
-import { dirname } from 'path';
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
-// Launch the browser and open a new blank page
-const browser = await puppeteer.launch();
+const browser = await puppeteer.launch({
+    headless: true, 
+    args: ['--no-sandbox', '--disable-setuid-sandbox']
+});
+
 const page = await browser.newPage();
 
-// Navigate the page to a URL.
-await page.goto('file://' + __dirname + '/resume.html', { waitUntil: 'networkidle2' });
-// Set screen size.
+page.setDefaultNavigationTimeout(120000);
+
+console.log('Esperando a que el servidor de Nuxt esté disponible...');
+
+await page.goto('http://localhost:3000', { waitUntil: 'networkidle2' });
+
+console.log('Página cargada correctamente. Generando PDF...');
+
 await page.setViewport({ width: 1632, height: 2112 });
+
+await new Promise(resolve => setTimeout(resolve, 3000));
+
 await page.pdf({
-    path: 'Aarón_Mishael_Carrizal_Méndez-Web_Developer.pdf', format: 'letter', printBackground: true,
+    path: 'Aarón_Mishael_Carrizal_Méndez-Web_Developer.pdf',
+    format: 'letter',
+    printBackground: true,
     margin: {
         top: '0mm',
         bottom: '0mm',
@@ -21,5 +30,7 @@ await page.pdf({
         right: '0mm',
     },
 });
+
+console.log('📄 PDF generado correctamente.');
 
 await browser.close();
