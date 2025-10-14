@@ -4,10 +4,11 @@
         "title": "Full Stack Web Developer",
         "email": "aaronk4572@gmail.com",
         "phone": "+52 444 858 5571",
+        "github": "https://github.com/aaroncarrizal",
         "location": "San Luis Potosí, México",
         "profilePicture": "profile_picture.jpg",
-        "linkedIn": "https://www.linkedin.com/in/aar%C3%B3n-carrizal/",
-        "profile": "Highly accomplished Full Stack Web Developer with 3+ years of progressive experience specializing in high-impact frontend architecture and robust full-stack integration. Driven by a focus on optimal user experience (UX) and frontend performance, actively contributed to scalable application design, ensuring user-friendly, cross-platform interfaces and seamless communication across microservice architectures via REST APIs. Expertise leverages modern frameworks including Nuxt, Vue.js, Tailwind CSS, and TypeScript, delivering clean, maintainable code within Agile SCRUM environments. Seeking a challenging role to leverage proven frontend expertise and full-stack knowledge to accelerate project delivery and solve complex UI/UX and performance challenges."
+        "linkedIn": "https://www.linkedin.com/in/aaron-carrizal/",
+        "profile": "Accomplished Full Stack Web Developer with 3+ years of progressive experience specializing in high-impact frontend architecture and robust full-stack integration. Driven by a focus on optimal user experience (UX) and frontend performance, actively contributed to scalable application design, ensuring user-friendly, cross-platform interfaces and seamless communication across microservice architectures. Expertise leverages modern frameworks including Nuxt, Vue.js, Tailwind CSS, and TypeScript, delivering clean, maintainable code within Agile SCRUM environments."
     },
     "employmentHistory": [
         {
@@ -66,18 +67,6 @@
                 ".NET",
                 "Python"
             ]
-        },
-        {
-            "position": "Intern",
-            "company": "UASLP",
-            "location": "San Luis Potosí",
-            "startDate": "2021-12",
-            "endDate": "2022-06",
-            "responsibilities": [
-                "Contributed to the development of internal web-based systems, enhancing functionality and user experience using PHP, HTML, JavaScript, and CSS.",
-                "Provided maintenance and support for corporate workstations, resolving technical issues promptly to minimize downtime and ensure smooth operation for employees."
-            ],
-            "technologies": ["HTML", "CSS", "JavaScript", "PHP", "MySQL"]
         }
     ],
     "education": [
@@ -115,21 +104,17 @@
         "softwareDevelopment": [
             "GIT",
             "Agile SCRUM",
-            "Clean Code",
             "Unit Testing",
             "Restful API",
             "Linux",
             "Microservices",
-            "CI/CD",
-            "Object Oriented Programming"
+            "CI/CD"
         ]
     },
     "softSkills": [
         "Teamwork",
-        "Adaptability",
         "Attention to detail",
         "Organization",
-        "Communication",
         "Problem-solving",
         "Time management"
     ],

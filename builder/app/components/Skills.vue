@@ -2,31 +2,30 @@
 const { skills, softSkills } = storeToRefs(useCVStore())
 </script>
 <template>
-    <h1>Skills</h1>
-    <Separator />
-    <div class="grid grid-cols-4">
-        <div>
-            <h4>Fronted</h4>
-            <ul>
-                <li v-for="skill in skills.frontend">{{ skill }}</li>
+    <Separator title="Skills" />
+    <div class="rounded-lg bg-gray-100 p-2">
+        <div class="flex flex-row items-center justify gap-4">
+            <h4 class="text-sm">Fronted</h4>
+            <ul class="text-xs flex flex-row gap-2 items-center" >
+                <li v-for="skill in skills.frontend" class="rounded-lg bg-gray-300 px-2 whitespace-nowrap">{{ skill }}</li>
             </ul>
         </div>
-        <div>
-            <h4>Backend</h4>
-            <ul>
-                <li v-for="skill in skills.backend">{{ skill }}</li>
+        <div class="flex flex-row items-center justify gap-4">
+            <h4 class="text-sm">Backend</h4>
+            <ul class="text-xs flex flex-row gap-2 items-center">
+                <li v-for="skill in skills.backend" class="rounded-lg bg-gray-300 px-2 whitespace-nowrap">{{ skill }}</li>
             </ul>
         </div>
-        <div>
-            <h4>Software Development</h4>
-            <ul>
-                <li v-for="skill in skills.softwareDevelopment">{{ skill }}</li>
+        <div class="flex flex-row items-center justify gap-4">
+            <h4 class="text-sm">Software Development</h4>
+            <ul class="text-xs flex flex-row gap-2 items-center">
+                <li v-for="skill in skills.softwareDevelopment" class="rounded-lg bg-gray-300 px-2 whitespace-nowrap">{{ skill }}</li>
             </ul>
         </div>
-        <div>
-            <h4>Soft Skills</h4>
-            <ul>
-                <li v-for="skill in softSkills">{{ skill }}</li>
+        <div class="flex flex-row items-center justify gap-4">
+            <h4 class="text-sm">Soft Skills</h4>
+            <ul class="text-xs flex flex-row gap-2 items-center">
+                <li v-for="skill in softSkills" class="rounded-lg bg-gray-300 px-2 whitespace-nowrap">{{ skill }}</li>
             </ul>
         </div>
     </div>

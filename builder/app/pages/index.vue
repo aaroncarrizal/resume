@@ -11,9 +11,9 @@ onMounted(() => {
     <div class="container mx-auto px-4">
         <PersonalInfo />
         <EmploymentHistory />
-        <EducationHistory />
         <Skills />
-        <Courses />
+        <EducationHistory />
+        <!-- <Courses /> -->
         <Languages />
     </div>
 </template>

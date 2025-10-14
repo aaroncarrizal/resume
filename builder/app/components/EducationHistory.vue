@@ -3,16 +3,15 @@ const { education } = storeToRefs(useCVStore())
 
 </script>
 <template>
-    <h1>Education</h1>
-    <Separator/>
-    <div v-for="school in education ">
-        <div class="flex justify-between items-align-center">
-            <h3>{{ school.degree }}</h3>
-            <span>{{ school.startDate}} - {{ school.endDate}}</span>
+    <Separator title="Education"/>
+    <div v-for="school in education" class="rounded-lg bg-gray-100 p-2 flex flex-col gap-1">
+        <div class="flex justify-between items-center">
+            <h4 class="text-sm font-bold">{{ school.degree }}</h4>
+            <span class="text-xs rounded-lg bg-gray-300 px-2">{{ school.startDate}} - {{ school.endDate}}</span>
         </div>
-        <div class="flex justify-between items-align-center">
-            <h3>{{school.institution}}</h3>
-            <span>{{school.location}}</span>
+        <div class="flex justify-between items-center">
+            <h4 class="text-sm">{{school.institution}}</h4>
+            <span class="text-xs">{{school.location}}</span>
         </div>
     </div>
 </template>

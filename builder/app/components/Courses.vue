@@ -6,8 +6,8 @@ const { courses } = storeToRefs(useCVStore());
     <Separator />
     <div v-for="course in courses">
         <div class="flex justify-between items-align-center">
-            <h3>{{ course.title }} at {{ course.institution}}</h3>
-            <span>{{ course.startDate}} - {{ course.endDate}}</span>
+            <h3 class="text-xs">{{ course.title }} at {{ course.institution}}</h3>
+            <span class="text-xs">{{ course.startDate}} - {{ course.endDate}}</span>
         </div>
     </div>
 </template>
