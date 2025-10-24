@@ -1,5 +1,5 @@
 import { defineStore } from 'pinia'
-import cvData from '../../../data.json'
+import cvData from '../../../optimized.json'
 import type {
     CV,
     PersonalInfo,
@@ -20,7 +20,8 @@ export const useCVStore = defineStore('cv', {
             location: '',
             profilePicture: '',
             linkedIn: '',
-            profile: ''
+            profile: '',
+            github: ''
         },
         employmentHistory: [] as Employment[],
         education: [] as Education[],

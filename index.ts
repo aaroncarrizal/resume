@@ -1,7 +1,7 @@
 import puppeteer from 'puppeteer';
 
 const browser = await puppeteer.launch({
-    headless: true, 
+    headless: true,
     args: ['--no-sandbox', '--disable-setuid-sandbox']
 });
 
@@ -20,7 +20,7 @@ await page.setViewport({ width: 1632, height: 2112 });
 await new Promise(resolve => setTimeout(resolve, 3000));
 
 await page.pdf({
-    path: 'Aarón_Mishael_Carrizal_Méndez-Web_Developer.pdf',
+    path: 'Aarón_Mishael_Carrizal_Méndez-Resume.pdf',
     format: 'letter',
     printBackground: true,
     margin: {
