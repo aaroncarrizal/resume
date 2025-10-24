@@ -1,10 +1,13 @@
 import { GoogleGenAI } from '@google/genai'
 import fs from 'fs/promises'
+import dotenv from 'dotenv'
+
+dotenv.config()
 
 const data = JSON.parse(await fs.readFile('./data.json', 'utf-8'))
 
 const ai = new GoogleGenAI({
-    apiKey: 'AIzaSyCl7gzfTbQhemJzxkgrssBsmdXu8MiaGw8'
+    apiKey: process.env.GEMINI_API
 })
 
 function startSpinner() {
@@ -117,7 +120,7 @@ ${jobDescription}
         const text = response.text.trim()
         const jsonMatch = text.match(/```json\s*([\s\S]*?)```/i)
         const jsonString = jsonMatch ? jsonMatch[1].trim() : text
-        jsonString.replace('**','')
+        jsonString.replace('**', '')
 
         await fs.writeFile('optimized.json', jsonString, 'utf-8')
         console.log('File saved as optimized.json')
