@@ -16,16 +16,16 @@
             "company": "Leadventure",
             "location": "Remote",
             "startDate": "2025-02",
-            "endDate": "Present",
+            "endDate": "2025-11",
             "responsibilities": [
                 "Successfully created and launched over 50 fully responsive websites from provided design specifications, accurately translating complex visual layouts into functional code, ensuring an optimal user experience across all devices.",
                 "Led the content migration process from legacy client websites, guaranteeing the seamless transfer and data integrity to the new platform, thereby maintaining service continuity for clients.",
                 "Developed multiple internal tools and scripts that significantly streamlined the site styling process and partially automated content migration, resulting in increased development efficiency and faster project delivery."
             ],
             "technologies": [
-                "Spark CMS",
+                "React",
+                "Next.js",
                 "SASS",
-                "HTML",
                 "Javascript",
                 "Python"
             ]
@@ -82,13 +82,12 @@
         "frontend": [
             "HTML",
             "CSS",
-            "JavaScript",
             "TypeScript",
-            "Bootstrap",
+            "Next.js",
+            "React.js",
             "Nuxt",
-            "Tailwind CSS",
             "Vue.js",
-            "Pinia"
+            "Tailwind CSS"
         ],
         "backend": [
             "PHP",
