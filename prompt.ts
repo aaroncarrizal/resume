@@ -35,6 +35,54 @@ Consolidate/Expand: Consolidate generic skills where a more specific job-related
 softSkills: Rephrase or reorder the list to prioritize and better align with the specific "cultural fit" and non-technical attributes mentioned or implied in the Job Description (e.g., change "Teamwork" to "Cross-functional Collaboration").
 
 Make sure that the texts of each JSON property remain more or less the same length as their previous version.
+The profile description must be 515 characters or fewer (including spaces).
+
+Each skill category list must have a total character count of 75 characters or fewer (counting letters, spaces, commas, and symbols).
+
+The structure of the skills must follow this format:
+"skills": {
+        "frontend": [
+            "HTML",
+            "CSS",
+            "TypeScript",
+            "Next.js",
+            "React.js",
+            "Nuxt",
+            "Vue.js",
+            "Tailwind CSS"
+        ],
+        "backend": [
+            "PHP",
+            "Laravel",
+            "Node.js",
+            "Express.js",
+            "TypeScript",
+            ".NET",
+            "ORM",
+            "SQL",
+            "MongoDB"
+        ],
+        "softwareDevelopment": [
+            "GIT",
+            "Agile SCRUM",
+            "Unit Testing",
+            "Restful API",
+            "Linux",
+            "Microservices",
+            "CI/CD"
+        ]
+    },
+    "softSkills": [
+        "Teamwork",
+        "Attention to detail",
+        "Organization",
+        "Problem-solving",
+        "Time management"
+    ],
+
+The character limits must be respected to ensure correct formatting in a PDF file.
+
+DON'T CHANGE TOO MUCH THE PROFILE, make sure it is reminiscent of the original profile
 
 Output Format
 

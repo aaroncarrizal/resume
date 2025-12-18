@@ -1,8 +1,8 @@
 import { GoogleGenAI } from '@google/genai';
 import fs from 'fs/promises';
 import dotenv from 'dotenv';
-import { prompt } from './prompt';
-import { jobDescription } from './jobDescription';
+import { prompt } from './prompt.ts';
+import { jobDescription } from './jobDescription.ts';
 
 dotenv.config();
 
