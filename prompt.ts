@@ -32,7 +32,7 @@ Prioritize: Reorder all technology lists to put the most critical and frequently
 
 Consolidate/Expand: Consolidate generic skills where a more specific job-related term is possible (e.g., replace 'SQL' with 'PostgreSQL' or 'MySQL' if the JD mentions it). Add any missing core technologies from the Job Description that the candidate likely possesses but didn't list explicitly (only add if they are standard for the candidate's existing experience).
 
-softSkills: Rephrase or reorder the list to prioritize and better align with the specific "cultural fit" and non-technical attributes mentioned or implied in the Job Description (e.g., change "Teamwork" to "Cross-functional Collaboration").
+softSkills: Rephrase or reorder the list to prioritize and better align with the specific "cultural fit" and non-technical attributes mentioned or implied in the Job Description.
 
 Make sure that the texts of each JSON property remain more or less the same length as their previous version.
 The profile description must be 515 characters or fewer (including spaces).
@@ -82,7 +82,7 @@ The structure of the skills must follow this format:
 
 The character limits must be respected to ensure correct formatting in a PDF file.
 
-DON'T CHANGE TOO MUCH THE PROFILE, make sure it is reminiscent of the original profile
+DON'T CHANGE TOO MUCH THE PROFILE, make sure it is reminiscent of the original profile, don't add any new technical skills just to appeal to the job description as I don't know them yet. If you think they are closely related to the ones I have listed go ahead and add them
 
 Output Format
 
