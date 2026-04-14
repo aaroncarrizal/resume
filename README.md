@@ -21,7 +21,7 @@ resume/
 ├── optimize.ts        # AI optimization script (uses Gemini)
 ├── data.json          # Your resume data (edit this)
 ├── prompt.ts          # Optimization prompt/guidelines
-├── jobDescription.ts  # Target job description for optimization
+├── jobDescription.txt  # Target job description for optimization
 ├── optimized.json     # AI-optimized resume output
 ├── builder/           # Nuxt web app for preview
 │   ├── app/           # Vue components and stores
@@ -53,7 +53,7 @@ Get your API key from [Google AI Studio](https://aistudio.google.com/app/apikey)
 ### Option 1: Use Existing Data
 
 1. Edit `data.json` with your resume information
-2. Edit `jobDescription.ts` with the target job description
+2. Edit `jobDescription.txt` with the target job description
 3. Run the optimizer:
 
 ```bash

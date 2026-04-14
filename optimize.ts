@@ -2,11 +2,11 @@ import { GoogleGenAI } from '@google/genai';
 import fs from 'fs/promises';
 import dotenv from 'dotenv';
 import { prompt } from './prompt.ts';
-import { jobDescription } from './jobDescription.ts';
 
 dotenv.config();
 
 const data = JSON.parse(await fs.readFile('./data.json', 'utf-8'));
+const jobDescription = await fs.readFile('./jobDescription.txt', 'utf-8');
 
 const ai = new GoogleGenAI({
   apiKey: process.env.GEMINI_API

@@ -5,7 +5,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npx ts-node index.ts",
-    "optimize": "npx ts-node optimize.ts"
+    "optimize": "npx ts-node optimize.ts",
+    "start": "npm run optimize && npm run build"
   },
   "keywords": [],
   "author": "",
