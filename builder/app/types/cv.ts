@@ -8,6 +8,7 @@ export interface PersonalInfo {
     profilePicture: string
     linkedIn: string
     profile: string
+    webpage: string
 }
 
 export interface Employment {

@@ -21,7 +21,8 @@ export const useCVStore = defineStore('cv', {
             profilePicture: '',
             linkedIn: '',
             profile: '',
-            github: ''
+            github: '',
+            webpage: ''
         },
         employmentHistory: [] as Employment[],
         education: [] as Education[],

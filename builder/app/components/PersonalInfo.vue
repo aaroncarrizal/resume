@@ -12,6 +12,12 @@ const parsedGithub = computed(() => {
         personalInfo.value.github?.replace(/^https?:\/\/(www\.)?/, '') || ''
     )
 })
+
+const parsedWebsite = computed(() => {
+    return (
+        personalInfo.value.webpage?.replace(/^https?:\/\/(www\.)?/, '') || ''
+    )
+})
 </script>
 <template>
     <div class="flex flex-col align-items-center gap-1 pt-2">
@@ -34,9 +40,12 @@ const parsedGithub = computed(() => {
             <li class="rounded-lg bg-gray-200 px-2">
                 {{ personalInfo.phone }}
             </li>
-            <li class="rounded-lg bg-gray-200 px-2">
-                {{ personalInfo.location }}
+            <li v-if="parsedWebsite" class="rounded-lg bg-gray-200 px-2">
+                <a :href="personalInfo.webpage">{{ parsedWebsite }}</a>
             </li>
+            <!--<li class="rounded-lg bg-gray-200 px-2">
+                {{ personalInfo.location }}
+            </li>-->
         </ul>
         <div>
             <p class="text-xs text-justify rounded-lg bg-gray-100 p-2">
