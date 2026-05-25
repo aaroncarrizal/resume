@@ -1,0 +1,150 @@
+{
+  "personalInfo": {
+    "fullName": "Aarón Mishael Carrizal Méndez",
+    "title": "Desarrollador Full Stack",
+    "email": "aaronk4572@gmail.com",
+    "phone": "+52 444 858 5571",
+    "github": "https://github.com/aaroncarrizal",
+    "location": "San Luis Potosí, México",
+    "profilePicture": "profile_picture.jpg",
+    "webpage": "https://aaron-carrizal.netlify.app/",
+    "linkedIn": "https://www.linkedin.com/in/aaron-carrizal/",
+    "profile": "Proactive Desarrollador Full Stack with 3+ years of experience specializing in high-impact frontend architecture and robust backend integration using Vue, Laravel, PHP, and MySQL. Proven track record in responsive UX/UI programming and modern environment deployments with Docker. Actively integrated AI solutions utilizing Gemini API and Prompt Engineering for smart automation. Collaborative, result-oriented engineer delivering clean, maintainable code within Agile environments."
+  },
+  "employmentHistory": [
+    {
+      "position": "Frontend Developer",
+      "company": "Leadventure",
+      "location": "Remote",
+      "startDate": "2025-02",
+      "endDate": "2025-11",
+      "responsibilities": [
+        "Architected and deployed over 50 highly responsive web platforms utilizing Bootstrap and SASS, ensuring exceptional UX/UI programming across all viewport resolutions.",
+        "Spearheaded content migration pipelines using Git version control, guaranteeing data integrity and zero downtime for active client ecosystems during platform transitions.",
+        "Engineered internal Python scripts and automation tools that streamlined style rendering workflows, reducing project delivery cycles and accelerating code deployment tasks."
+      ],
+      "technologies": [
+        "React",
+        "Next.js",
+        "Bootstrap",
+        "Javascript",
+        "Python"
+      ]
+    },
+    {
+      "position": "Full Stack Web Developer",
+      "company": "D4T Technologies",
+      "location": "San Luis Potosí",
+      "startDate": "2024-01",
+      "endDate": "2025-02",
+      "responsibilities": [
+        "Designed and executed core backend services using Laravel and PHP, optimizing MySQL databases to handle high-throughput transactions and improve application query latency.",
+        "Integrated generative AI features leveraging the Gemini API and Prompt Engineering, implementing automated workflows and smart configurations to enhance user interactivity.",
+        "Containerized applications using Docker to streamline deployments, collaborating on a microservices-based Nuxt frontend architecture to ensure rapid, seamless system integrations."
+      ],
+      "technologies": [
+        "Nuxt",
+        "Tailwind CSS",
+        "TypeScript",
+        "Laravel",
+        "PHP",
+        "MySQL",
+        "Docker"
+      ]
+    },
+    {
+      "position": "Full Stack Web Developer",
+      "company": "Fyware",
+      "location": "San Luis Potosí",
+      "startDate": "2022-06",
+      "endDate": "2023-06",
+      "responsibilities": [
+        "Developed and maintained responsive web interfaces using Vue 2, integrating them seamlessly with backend APIs to establish highly efficient cross-platform communication.",
+        "Deployed stable production releases and configured application environments via Git-driven pipelines, accelerating overall project delivery schedules by collaborating in agile squads.",
+        "Optimized data persistence layer with MongoDB and Express.js, designing robust RESTful services to sustain high concurrent traffic and elevate web application reliability."
+      ],
+      "technologies": [
+        "Vue 2",
+        "Express.js",
+        "MongoDB",
+        "JavaScript",
+        "Python"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "IT Engineer",
+      "institution": "Universidad Politécnica de San Luis Potosí",
+      "location": "San Luis Potosí, S.L.P.",
+      "startDate": "2018-08",
+      "endDate": "2023-12"
+    }
+  ],
+  "skills": {
+    "frontend": [
+      "Vue 2",
+      "JavaScript",
+      "Bootstrap",
+      "Tailwind CSS",
+      "TypeScript"
+    ],
+    "backend": [
+      "PHP",
+      "Laravel",
+      "MySQL",
+      "Node.js",
+      "Express.js",
+      "TypeScript"
+    ],
+    "softwareDevelopment": [
+      "Git",
+      "Docker",
+      "Gemini API",
+      "Prompt Engineering",
+      "CI/CD",
+      "Agile"
+    ]
+  },
+  "softSkills": [
+    "Teamwork",
+    "Proactive Problem-solving",
+    "Responsibility",
+    "Attention to detail",
+    "Organization"
+  ],
+  "languages": [
+    {
+      "name": "English",
+      "level": "C1"
+    },
+    {
+      "name": "French",
+      "level": "A2"
+    },
+    {
+      "name": "Spanish",
+      "level": "Native"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Databases",
+      "institution": "Microsoft IT Associate",
+      "startDate": "2021-08",
+      "endDate": "2021-12"
+    },
+    {
+      "title": "NDG Linux Essentials",
+      "institution": "CISCO",
+      "startDate": "2022-01",
+      "endDate": "2022-05"
+    },
+    {
+      "title": "Cybersecurity Essentials",
+      "institution": "CISCO",
+      "startDate": "2022-08",
+      "endDate": "2022-12"
+    }
+  ]
+}

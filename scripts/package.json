@@ -1,0 +1,14 @@
+{
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@resume/core": "*",
+    "@resume/adapter-storage": "*",
+    "@resume/adapter-gemini": "*",
+    "@resume/adapter-puppeteer": "*"
+  },
+  "devDependencies": {
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0"
+  }
+}

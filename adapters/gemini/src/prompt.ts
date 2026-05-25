@@ -1,5 +1,4 @@
-export const prompt =
-`
+export const optimizePrompt = `
 Role: Expert ATS/Recruiter CV Optimization Engineer.
 
 Objective: Analyze a candidate's CV (in JSON format) and a specific Job Description to generate a significantly optimized CV in the exact same JSON structure. The optimization must simultaneously ensure the CV achieves a near-perfect match score with Applicant Tracking Systems (ATS) and presents a compelling, achievement-focused narrative that is highly attractive to human recruiters and hiring engineers. The ultimate goal is to maximize the candidate's chances of securing a job interview.
@@ -38,47 +37,6 @@ Make sure that the texts of each JSON property remain more or less the same leng
 The profile description must be 515 characters or fewer (including spaces).
 
 Each skill category list must have a total character count of 75 characters or fewer (counting letters, spaces, commas, and symbols).
-
-The structure of the skills must follow this format:
-"skills": {
-        "frontend": [
-            "HTML",
-            "CSS",
-            "TypeScript",
-            "Next.js",
-            "React.js",
-            "Nuxt",
-            "Vue.js",
-            "Tailwind CSS"
-        ],
-        "backend": [
-            "PHP",
-            "Laravel",
-            "Node.js",
-            "Express.js",
-            "TypeScript",
-            ".NET",
-            "ORM",
-            "SQL",
-            "MongoDB"
-        ],
-        "softwareDevelopment": [
-            "GIT",
-            "Agile SCRUM",
-            "Unit Testing",
-            "Restful API",
-            "Linux",
-            "Microservices",
-            "CI/CD"
-        ]
-    },
-    "softSkills": [
-        "Teamwork",
-        "Attention to detail",
-        "Organization",
-        "Problem-solving",
-        "Time management"
-    ],
 
 The character limits must be respected to ensure correct formatting in a PDF file.
 
