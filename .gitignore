@@ -1,4 +1,8 @@
-node_modules
-*.json
-*.pdf
+node_modules/
 .env
+*.pdf
+output/
+.nuxt/
+.output/
+dist/
+.nitro/

@@ -1,0 +1,3 @@
+{
+  "tailwindCSS.experimental.configFile": "adapters/react-renderer/src/app.css"
+}

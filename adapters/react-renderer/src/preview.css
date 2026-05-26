@@ -1,0 +1,52 @@
+.pv-btn {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 9999;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  background: #374151;
+  color: white;
+  cursor: pointer;
+  font-family: Poppins, sans-serif;
+  font-size: 14px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: background 0.15s;
+}
+
+.pv-btn:hover {
+  background: #4b5563;
+}
+
+.pv-btn.active {
+  background: #059669;
+}
+
+.pv-btn.active:hover {
+  background: #047857;
+}
+
+.pv-paper {
+  background: #9ca3af !important;
+  min-height: 100vh;
+}
+
+.pv-paper body {
+  position: relative;
+  background: white !important;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15);
+  padding: 0.3in;
+  border-radius: 2px;
+  min-height: 11in;
+}
+
+.pv-paper body::after {
+  content: '';
+  position: absolute;
+  top: 11in;
+  left: 0;
+  right: 0;
+  border-top: 2px dashed #ef4444;
+  pointer-events: none;
+}
