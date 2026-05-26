@@ -33,8 +33,20 @@
 }
 
 .pv-paper body {
+  position: relative;
   background: white !important;
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15);
   padding: 0.3in;
   border-radius: 2px;
+  min-height: 11in;
+}
+
+.pv-paper body::after {
+  content: '';
+  position: absolute;
+  top: 11in;
+  left: 0;
+  right: 0;
+  border-top: 2px dashed #ef4444;
+  pointer-events: none;
 }

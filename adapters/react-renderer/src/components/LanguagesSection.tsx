@@ -11,7 +11,7 @@ export function LanguagesSection({ languages }: { languages: Language[] }) {
       <Divider text='Languages' />
       <Container>
         {languages.map((lang, k) => (
-          <div className='flex justify-between text-xs'>
+          <div className='flex justify-between text-2xs'>
             <p>{lang.name}</p>
             <p>{lang.level}</p>
           </div>

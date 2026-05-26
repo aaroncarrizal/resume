@@ -8,8 +8,8 @@ import { Container } from './ui/Container';
 function Category({ name, items }: { name: string; items: string[] }) {
   if (!items || items.length === 0) return null
   return (
-    <div className='flex text-xs'>
-      <h5 className='whitespace-nowrap'>{name}</h5>
+    <div className='flex text-2xs'>
+      <h5 className='whitespace-nowrap mr-2'>{name}</h5>
       <MasonryHorizontal>
         {items.map((skill, i) => (
           <Pill key={i}>

@@ -12,17 +12,17 @@ export function EmploymentSection({ history }: { history: Employment[] }) {
       <Divider text='Employment' />
       {history.map((job, i) => (
         <Container key={i}>
-          <div className="flex justify-between text-xs">
+          <div className="flex justify-between text-2xs">
             <h4>{job.company}</h4>
             <Pill>{job.startDate} - {job.endDate}</Pill>
           </div>
-          <div className="flex justify-between text-xs">
+          <div className="flex justify-between text-2xs">
             <h4>{job.position}</h4>
             <Pill>{job.location}</Pill>
           </div>
-          <ul className="list-disc text-xs list-inside">
+          <ul className="list-disc text-2xs list-inside">
             {job.responsibilities.map((r, j) => (
-              <li key={j} className="mb-0.5">{r}</li>
+              <li key={j} className="leading-tight">{r}</li>
             ))}
           </ul>
         </Container>

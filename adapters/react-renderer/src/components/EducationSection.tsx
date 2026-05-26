@@ -11,7 +11,7 @@ export function EducationSection({ education }: { education: Education[] }) {
     <section>
       <Divider text='Education' />
       {education.map((school, i) => (
-        <Container key={i} className='text-xs'>
+        <Container key={i} className='text-2xs'>
           <div className="flex justify-between">
             <h4>{school.degree}</h4>
             <Pill>{school.startDate} - {school.endDate}</Pill>
@@ -20,7 +20,7 @@ export function EducationSection({ education }: { education: Education[] }) {
             <h4>{school.institution}</h4>
             <Pill>{school.location}</Pill>
           </div>
-          <div className="text-xs">
+          <div className="text-2xs">
             {school.achievements}
           </div>
         </Container>
