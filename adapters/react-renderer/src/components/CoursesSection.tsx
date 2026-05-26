@@ -5,7 +5,7 @@ export function CoursesSection({ courses }: { courses: Course[] }) {
   if (!courses || courses.length === 0) return null
 
   return (
-    <div className="bg-gray-200 rounded-2xl px-4 py-2 mb-2">
+    <div className="bg-gray-200 rounded-2xl px-4 py-2 mb-1">
       <h2 className="text-lg font-bold">Courses</h2>
       {courses.map((course, i) => (
         <div key={i}>

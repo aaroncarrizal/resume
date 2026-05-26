@@ -9,7 +9,7 @@ export function EmploymentSection({ history }: { history: Employment[] }) {
   if (!history || history.length === 0) return null
 
   return (
-    <section className='mb-2'>
+    <section className='mb-1'>
       <Divider text='Employment' />
       <div className='flex flex-col gap-1'>
         {history.map((job, i) => (

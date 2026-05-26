@@ -37,7 +37,8 @@ async function main() {
     return idx !== -1 ? args[idx + 1] : fallback
   }
 
-  const inputPath = get('--input', PATHS.optimized)
+  const isBase = args.includes('--base')
+  const inputPath = isBase ? PATHS.dataJson : get('--input', PATHS.optimized)
   const outputHtmlPath = get('--output', PATHS.outputHtml)
   const format = get('--format', 'letter') as 'letter' | 'a4'
 
@@ -46,7 +47,7 @@ async function main() {
   const pdfFilename = `${cv.personalInfo.fullName.replace(/\s+/g, '_')}-Resume.pdf`
   const outputPdfPath = resolve(dirname(outputHtmlPath), pdfFilename)
 
-  console.log(`Input:  ${cvPath}`)
+  console.log(`Input:  ${cvPath}${isBase ? ' (base)' : ''}`)
   console.log(`Output: ${outputHtmlPath}`)
   console.log(`Format: ${format}`)
   console.log()

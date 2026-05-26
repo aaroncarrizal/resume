@@ -9,7 +9,7 @@
     "profilePicture": "profile_picture.jpg",
     "webpage": "https://aaron-carrizal.netlify.app/",
     "linkedIn": "https://www.linkedin.com/in/aaron-carrizal/",
-    "profile": "Accomplished Full Stack Web Developer with 3+ years of progressive experience specializing in high-impact frontend architecture, robust full-stack integration, and AI-driven engineering. Expert at leveraging Claude Code, Model Context Protocol (MCP), RAG, and Specification-Driven Development (SDD) alongside runtime environments like Bun and Antigravity frameworks to accelerate software delivery. Driven by Clean Code principles, SOLID architecture, and optimal user experience (UX) to build highly scalable, intelligent, and performance-optimized web applications within Agile SCRUM environments."
+    "profile": "Accomplished Full Stack Web Developer with 3+ years of progressive experience specializing in high-impact frontend architecture, resilient backend microservices, and robust full-stack integration. Driven by Clean Code principles, SOLID architecture, and optimal user experience (UX) to build highly scalable, performance-optimized web applications within Agile SCRUM environments. Deeply proficient across modern ecosystems (Vue/Nuxt, React/Next.js, Node.js, Laravel) with a strong plus in leveraging AI-driven tools like Claude Code, MCP, and RAG pipelines to accelerate software delivery cycles."
   },
   "employmentHistory": [
     {
@@ -19,9 +19,9 @@
       "startDate": "2025-02",
       "endDate": "2025-11",
       "responsibilities": [
-        "Successfully created and launched over 50 fully responsive websites from provided design specifications, applying Clean Code standards to guarantee structural maintenance and optimal cross-device UX.",
-        "Led the content migration process from legacy client websites, utilizing Python, Bun-driven scripts, and Claude Code agentic workflows to automate operations and guarantee data integrity.",
-        "Developed multiple internal tools and custom AI prompt chains that significantly streamlined the site styling process, resulting in a marked increase in frontend development efficiency."
+        "Successfully created and launched over 50 fully responsive websites from provided design specifications, applying Clean Code standards to guarantee long-term maintainability and optimal cross-device UX.",
+        "Led the end-to-end content migration process from legacy client websites to the new platform, building custom Python and Bun-driven scripts to automate transfer pipelines while guaranteeing total data integrity.",
+        "Developed multiple internal web tools and integrated Claude Code workflows that streamlined the site styling architecture, resulting in a marked increase in frontend engineering delivery speeds."
       ],
       "technologies": ["React", "Next.js", "SASS", "Javascript", "Python", "Bun", "Claude Code", "OpenCode"]
     },
@@ -32,9 +32,9 @@
       "startDate": "2024-01",
       "endDate": "2025-02",
       "responsibilities": [
-        "Supported the project's planning and roadmap execution by applying Specification-Driven Development (SDD) to establish reliable, predictable full-stack behaviors.",
-        "Enhanced user satisfaction and performance by optimizing Nuxt components, enforcing SOLID principles, and utilizing AI-augmented linting to minimize technical debt.",
-        "Played a key role in delivering an intelligent microservice architecture, implementing Model Context Protocol (MCP) servers, Antigravity deployment structures, and RAG pipelines to connect application backends with LLM layers."
+        "Played a key role in delivering a scalable and resilient full-stack microservice architecture, ensuring seamless cross-platform communication and solid API contract alignment across systems.",
+        "Enhanced user satisfaction and frontend performance by optimizing responsive Nuxt application components, enforcing SOLID principles, and minimizing runtime technical debt.",
+        "Supported long-term project planning and roadmap execution by applying Specification-Driven Development (SDD) alongside modern AI integrations like MCP servers and RAG pipelines to augment platform capabilities."
       ],
       "technologies": [
         "Nuxt",
@@ -55,9 +55,9 @@
       "startDate": "2022-06",
       "endDate": "2023-06",
       "responsibilities": [
-        "Facilitated data exchange and integration by designing, implementing, and consuming REST APIs structured around clear Clean Architecture guidelines.",
-        "Accelerated project completion across multiple technology stacks, utilizing modern database optimizations and automated testing workflows to ensure systemic reliability.",
-        "Contributed to the successful launch and maintenance of multiple web applications by planning, developing, testing, deploying, and maintaining features, ensuring high availability."
+        "Facilitated seamless data exchange and integration by designing, implementing, and consuming secure RESTful APIs structured around clear Clean Architecture guidelines.",
+        "Accelerated comprehensive web application completion by collaborating across multiple technology stacks (.NET, Python, Node.js) and optimizing complex relational and non-relational database models.",
+        "Contributed to the successful launch and lifecycle maintenance of multiple full-stack web applications by planning, testing, deploying, and maintaining core features to ensure high availability."
       ],
       "technologies": ["Vue.js", "Express.js", "MongoDB", ".NET", "Python", "PostgreSQL", "GraphQL"]
     }
@@ -107,41 +107,29 @@
       "SQL"
     ],
     "softwareDevelopment": [
-      "Claude Code / OpenCode",
-      "MCP",
-      "RAG",
-      "SDD / TDD",
-      "AI Prompt Engineering",
       "Clean Code & SOLID Principles",
       "Clean Architecture",
       "Docker",
       "AWS",
-      "Vercel",
       "GIT",
-      "GitHub",
-      "Electron",
-      "Linux",
-      "Vite",
-      "Postman",
-      "Jest",
-      "Cypress",
-      "Vitest",
-      "Agile SCRUM",
-      "Unit Testing",
       "Restful API",
       "Microservices",
-      "CI/CD"
+      "CI/CD",
+      "Unit Testing",
+      "Agile SCRUM",
+      "Linux",
+      "Claude Code / OpenCode",
+      "MCP / RAG",
+      "SDD / TDD / AI Prompting"
     ]
   },
   "softSkills": [
     "Technical Leadership",
     "Analytical Problem Solving",
     "Rapid Adaptability",
-    "Systems Thinking",
     "Team Collaboration",
     "Project Ownership",
     "Workflow Automation",
-    "Client Management",
     "Attention to Detail",
     "Performance Resilience"
   ],

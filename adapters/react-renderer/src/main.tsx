@@ -11,10 +11,14 @@ function App() {
 
   useEffect(() => {
     async function load() {
-      try {
-        setCv((await import('../../../data/optimized.json')) as CV)
-      } catch {
+      if (import.meta.env.VITE_BASE === 'true') {
         setCv((await import('../../../data/data.json')) as CV)
+      } else {
+        try {
+          setCv((await import('../../../data/optimized.json')) as CV)
+        } catch {
+          setCv((await import('../../../data/data.json')) as CV)
+        }
       }
     }
     load()

@@ -15,18 +15,17 @@ adapters/
   react-renderer/        # Vite + React dev preview & SSR (HMR)
     src/
       app.css             # Tailwind v4 entry + @theme tokens (colors, fonts)
-      CVLayout.tsx        # Main grid layout
-      components/         # Section components
-      PaperToggle.tsx     # Page/Scroll view toggle
-      preview.css         # Dev preview styles (pv-btn, pv-paper)
+      CVLayout.tsx        # Main layout (imports Header + section components)
+      PaperToggle.tsx     # Page/Scroll view toggle + page-break indicator
+      preview.css         # Dev preview styles (pv-btn, pv-paper, page break)
       main.tsx            # Entry point (imports app.css, data.json)
-  scraper/               # Stub for future JD scraping
+      components/         # Section components + ui/primitives
+      lib/                # Utility helpers (cn, parseUrl)
 scripts/                 # Thin CLI orchestrators
   helpers/paths.ts       # Centralized path constants
   optimize.ts            # data.json + JD => Gemini => optimized.json
   pdf.ts                 # SSR render + Puppeteer capture => output/resume.pdf
 data/                    # data.json, optimized.json, jds/*.txt
-packages/web/            # Nuxt 4 + Vue web preview (separate app)
 ```
 
 ## Commands
@@ -34,24 +33,27 @@ packages/web/            # Nuxt 4 + Vue web preview (separate app)
 | Command | What it does |
 |---|---|
 | `npm run optimize` | AI-optimize CV for a JD |
-| `npm run pdf` | Render HTML + generate PDF |
+| `npm run pdf` | Render HTML + generate PDF (from optimized.json) |
+| `npm run pdf:base` | Render HTML + generate PDF from data.json directly |
 | `npm run dev` | Dev server with HMR at http://localhost:3000 |
 | `npm start` | Optimize + PDF in sequence |
+| `npm run start:base` | PDF from data.json (no optimization) |
 
-Flags: `--jd <path>`, `--input <path>`, `--output <path>`, `--format <letter|a4>`.
+Flags: `--jd <path>`, `--input <path>`, `--output <path>`, `--format <letter|a4>`, `--base`.
 
 ## Pipeline
 
 1. Drop a JD into `data/jds/`
 2. `npm run optimize` (reads `data/data.json` + JD, calls Gemini, writes `data/optimized.json`)
-3. `npm run pdf` (reads `data/optimized.json` (or `data/data.json`), renders via React SSR + Puppeteer, writes `output/resume.pdf`)
+3. `npm run pdf` (reads `data/optimized.json`, renders via React SSR + Puppeteer, writes `output/resume.pdf`)
+
+To skip optimization and use the base resume directly: `npm run pdf:base` (reads `data/data.json`).
 
 ## Key design rules
 
 - `core/` has **zero external dependencies**
 - `scripts/` are thin — all logic lives in adapters or core
 - Adapters are swappable (e.g., swap `gemini/` for `openai/` with same interface)
-- The web app (`packages/web/`) is standalone — uses `@resume/core` only for types
 
 ## Changing the CV layout
 
@@ -60,8 +62,7 @@ Components live in `adapters/react-renderer/src/components/`. Each section is st
 | Component | File |
 |---|---|
 | `CVLayout` | `src/CVLayout.tsx` |
-| `HeaderSidebar` | `components/HeaderSidebar.tsx` |
-| `HeaderMain` | `components/HeaderMain.tsx` |
+| `Header` | `components/Header.tsx` |
 | `EmploymentSection` | `components/EmploymentSection.tsx` |
 | `EducationSection` | `components/EducationSection.tsx` |
 | `SkillsSection` | `components/SkillsSection.tsx` |
@@ -76,13 +77,14 @@ Theme tokens live in `adapters/react-renderer/src/app.css`:
 
 ```css
 @theme {
-  --color-primary: #2563eb;
+  --color-primary: #000000;
   --color-primary-light: #dbeafe;
   --color-surface: #f3f4f6;
   --color-surface-alt: #d1d5db;
   --color-border: #e5e7eb;
   --color-text-muted: #6b7280;
-  --font-family-sans: 'Poppins', sans-serif;
+  --text-2xs: 0.625rem;
+  --text-2xs--line-height: 0.875rem;
 }
 ```
 
@@ -94,7 +96,8 @@ Defining `--color-primary` via `@theme` auto-generates `bg-primary`, `text-prima
 |---|---|
 | `bg-surface` | Section headers, skill card containers |
 | `bg-surface-alt` | Skill pills, technology badges |
-| (layout classes) | `grid`, `flex`, `text-xs`, `font-bold`, padding/margin — raw Tailwind |
+| `text-2xs` | All body content (10pt base size) |
+| (layout classes) | `grid`, `flex`, `text-2xs`, `font-bold`, padding/margin — raw Tailwind |
 
 **Changing the theme:** edit `@theme` block in `app.css`. For PDF-only changes (page size, margins), edit `core/src/styles.ts`.
 
@@ -102,7 +105,7 @@ Defining `--color-primary` via `@theme` auto-generates `bg-primary`, `text-prima
 
 `npm run dev` starts a Vite dev server at `http://localhost:3000`. It imports `data/data.json` directly and renders the same React components used for PDF output. Edits are reflected instantly via HMR — no page reload needed.
 
-A **Page View / Scroll View** toggle in the bottom-right corner switches between a letter-sized paper overlay (matching the PDF dimensions) and the normal scrollable view. The toggle persists across page loads via localStorage.
+A **Page View / Scroll View** toggle in the bottom-right corner switches between a letter-sized paper overlay (matching the PDF dimensions) and the normal scrollable view. In Page View, a red dashed line marks the 11in page boundary — content spilling past it won't fit on one page. The toggle persists across page loads via localStorage.
 
 ## Env
 

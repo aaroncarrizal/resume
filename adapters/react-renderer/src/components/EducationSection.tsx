@@ -9,7 +9,7 @@ export function EducationSection({ education }: { education: Education[] }) {
   if (!education || education.length === 0) return null
 
   return (
-    <section>
+    <section className='mb-1'>
       <Divider text='Education' />
       {education.map((school, i) => (
         <Container key={i} className='text-2xs'>
