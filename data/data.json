@@ -74,61 +74,81 @@
   ],
   "skills": {
     "frontend": [
-      "HTML",
-      "CSS",
+      "HTML5",
+      "CSS3",
+      "JavaScript",
       "TypeScript",
-      "Next.js",
-      "React.js",
-      "Nuxt",
       "Vue.js",
+      "Nuxt",
+      "React",
+      "Next.js",
+      "Pinia",
       "Tailwind CSS",
-      "Pinia / Zustand"
+      "Sass/SCSS",
+      "Bootstrap"
     ],
     "backend": [
+      "Node.js",
+      "Express.js",
+      "Bun",
       "PHP",
       "Laravel",
-      "Node.js",
-      "Bun",
-      "Express.js",
-      "TypeScript",
-      ".NET",
-      "ORM",
-      "SQL",
+      "Python",
+      "Java",
+      "Kotlin",
+      ".NET/C#",
+      "Sequelize",
+      "Prisma",
       "PostgreSQL",
-      "MongoDB"
+      "MySQL",
+      "MongoDB",
+      "Redis",
+      "ORM",
+      "SQL"
     ],
     "softwareDevelopment": [
       "Claude Code / OpenCode",
       "MCP",
       "RAG",
-      "SDD",
+      "SDD / TDD",
       "AI Prompt Engineering",
       "Clean Code & SOLID Principles",
       "Clean Architecture",
-      "GIT",
       "Docker",
+      "AWS",
+      "Vercel",
+      "GIT",
+      "GitHub",
+      "Electron",
+      "Linux",
+      "Vite",
+      "Postman",
+      "Jest",
+      "Cypress",
+      "Vitest",
       "Agile SCRUM",
       "Unit Testing",
       "Restful API",
-      "Linux",
       "Microservices",
       "CI/CD"
     ]
   },
-  "softSkills": ["Teamwork", "Attention to detail", "Organization", "Problem-solving", "Time management"],
+  "softSkills": [
+    "Technical Leadership",
+    "Analytical Problem Solving",
+    "Rapid Adaptability",
+    "Systems Thinking",
+    "Team Collaboration",
+    "Project Ownership",
+    "Workflow Automation",
+    "Client Management",
+    "Attention to Detail",
+    "Performance Resilience"
+  ],
   "languages": [
-    {
-      "name": "English",
-      "level": "C1"
-    },
-    {
-      "name": "French",
-      "level": "A2"
-    },
-    {
-      "name": "Spanish",
-      "level": "Native"
-    }
+    { "name": "English", "level": "C1" },
+    { "name": "French", "level": "A2" },
+    { "name": "Spanish", "level": "Native" }
   ],
   "courses": [
     {

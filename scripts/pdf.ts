@@ -43,6 +43,8 @@ async function main() {
 
   const cvPath = existsSync(inputPath) ? inputPath : PATHS.dataJson
   const cv: CV = JSON.parse(readFileSync(cvPath, 'utf-8'))
+  const pdfFilename = `${cv.personalInfo.fullName.replace(/\s+/g, '_')}-Resume.pdf`
+  const outputPdfPath = resolve(dirname(outputHtmlPath), pdfFilename)
 
   console.log(`Input:  ${cvPath}`)
   console.log(`Output: ${outputHtmlPath}`)
@@ -67,8 +69,8 @@ async function main() {
   writeFileSync(outputHtmlPath, html, 'utf-8')
   console.log(`Rendered HTML to ${outputHtmlPath}`)
 
-  await generatePDF({ input: outputHtmlPath, output: PATHS.outputPdf, format })
-  console.log(`PDF generated: ${PATHS.outputPdf}`)
+  await generatePDF({ input: outputHtmlPath, output: outputPdfPath, format })
+  console.log(`PDF generated: ${outputPdfPath}`)
 }
 
 await main()
