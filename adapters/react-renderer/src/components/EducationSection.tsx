@@ -3,6 +3,7 @@ import type { Education } from '@resume/core'
 import { Divider } from './ui/Divider'
 import { Container } from './ui/Container'
 import { Pill } from './ui/Pill'
+import { HorizontalGrow } from './ui/HorizontalGrow'
 
 export function EducationSection({ education }: { education: Education[] }) {
   if (!education || education.length === 0) return null
@@ -12,15 +13,15 @@ export function EducationSection({ education }: { education: Education[] }) {
       <Divider text='Education' />
       {education.map((school, i) => (
         <Container key={i} className='text-2xs'>
-          <div className="flex justify-between">
-            <h4>{school.degree}</h4>
+          <HorizontalGrow>
+            <h4 className='font-bold'>{school.degree}</h4>
             <Pill>{school.startDate} - {school.endDate}</Pill>
-          </div>
-          <div className="flex justify-between">
-            <h4>{school.institution}</h4>
+          </HorizontalGrow>
+          <HorizontalGrow>
+            <h4 className='font-medium'>{school.institution}</h4>
             <Pill>{school.location}</Pill>
-          </div>
-          <div className="text-2xs">
+          </HorizontalGrow>
+          <div className='text-2xs'>
             {school.achievements}
           </div>
         </Container>
