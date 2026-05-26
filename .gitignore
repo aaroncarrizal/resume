@@ -1,8 +1,6 @@
 node_modules/
 .env
 output/
-output/*.pdf
-.nuxt/
-.output/
 dist/
-.nitro/
+data/jds/
+data/optimized.json
