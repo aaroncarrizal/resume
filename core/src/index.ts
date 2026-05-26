@@ -8,5 +8,4 @@ export type {
   Course,
 } from './types'
 
-export { renderCV } from './render'
 export { styles } from './styles'

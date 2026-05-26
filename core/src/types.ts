@@ -27,6 +27,7 @@ export interface Education {
   location: string
   startDate: string
   endDate: string
+  achievements?: string
 }
 
 export interface Skills {

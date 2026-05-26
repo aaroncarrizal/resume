@@ -1,146 +1,153 @@
 {
-    "personalInfo": {
-        "fullName": "Aarón Mishael Carrizal Méndez",
-        "title": "Full Stack Web Developer",
-        "email": "aaronk4572@gmail.com",
-        "phone": "+52 444 858 5571",
-        "github": "https://github.com/aaroncarrizal",
-        "location": "San Luis Potosí, México",
-        "profilePicture": "profile_picture.jpg",
-        "webpage": "https://aaron-carrizal.netlify.app/",
-        "linkedIn": "https://www.linkedin.com/in/aaron-carrizal/",
-        "profile": "Accomplished Full Stack Web Developer with 3+ years of progressive experience specializing in high-impact frontend architecture and robust full-stack integration. Driven by a focus on optimal user experience (UX) and frontend performance, actively contributed to scalable application design, ensuring user-friendly, cross-platform interfaces and seamless communication across microservice architectures. Expertise leverages modern frameworks including Nuxt, Vue.js, Tailwind CSS, and TypeScript, delivering clean, maintainable code within Agile SCRUM environments."
+  "personalInfo": {
+    "fullName": "Aarón Mishael Carrizal Méndez",
+    "title": "Full Stack Web Developer",
+    "email": "aaronk4572@gmail.com",
+    "phone": "+52 444 858 5571",
+    "github": "https://github.com/aaroncarrizal",
+    "location": "San Luis Potosí, México",
+    "profilePicture": "profile_picture.jpg",
+    "webpage": "https://aaron-carrizal.netlify.app/",
+    "linkedIn": "https://www.linkedin.com/in/aaron-carrizal/",
+    "profile": "Accomplished Full Stack Web Developer with 3+ years of progressive experience specializing in high-impact frontend architecture, robust full-stack integration, and AI-driven engineering. Expert at leveraging Claude Code, Model Context Protocol (MCP), RAG, and Specification-Driven Development (SDD) alongside runtime environments like Bun and Antigravity frameworks to accelerate software delivery. Driven by Clean Code principles, SOLID architecture, and optimal user experience (UX) to build highly scalable, intelligent, and performance-optimized web applications within Agile SCRUM environments."
+  },
+  "employmentHistory": [
+    {
+      "position": "Frontend Developer",
+      "company": "Leadventure",
+      "location": "Remote",
+      "startDate": "2025-02",
+      "endDate": "2025-11",
+      "responsibilities": [
+        "Successfully created and launched over 50 fully responsive websites from provided design specifications, applying Clean Code standards to guarantee structural maintenance and optimal cross-device UX.",
+        "Led the content migration process from legacy client websites, utilizing Python, Bun-driven scripts, and Claude Code agentic workflows to automate operations and guarantee data integrity.",
+        "Developed multiple internal tools and custom AI prompt chains that significantly streamlined the site styling process, resulting in a marked increase in frontend development efficiency."
+      ],
+      "technologies": ["React", "Next.js", "SASS", "Javascript", "Python", "Bun", "Claude Code", "OpenCode"]
     },
-    "employmentHistory": [
-        {
-            "position": "Frontend Developer",
-            "company": "Leadventure",
-            "location": "Remote",
-            "startDate": "2025-02",
-            "endDate": "2025-11",
-            "responsibilities": [
-                "Successfully created and launched over 50 fully responsive websites from provided design specifications, accurately translating complex visual layouts into functional code, ensuring an optimal user experience across all devices.",
-                "Led the content migration process from legacy client websites, guaranteeing the seamless transfer and data integrity to the new platform, thereby maintaining service continuity for clients.",
-                "Developed multiple internal tools and scripts that significantly streamlined the site styling process and partially automated content migration, resulting in increased development efficiency and faster project delivery."
-            ],
-            "technologies": [
-                "React",
-                "Next.js",
-                "SASS",
-                "Javascript",
-                "Python"
-            ]
-        },
-        {
-            "position": "Full Stack Web Developer",
-            "company": "D4T Technologies",
-            "location": "San Luis Potosí",
-            "startDate": "2024-01",
-            "endDate": "2025-02",
-            "responsibilities": [
-                "Supported the project's planning and roadmap execution, providing insights on frontend architecture and collaborating with the team to resolve potential development challenges.",
-                "Enhanced user satisfaction and engagement by developing a user-friendly and responsive interface for the web application, focusing on frontend performance and optimizing it for various devices and platforms.",
-                "Played a key role in delivering a scalable and resilient application by collaborating in the design of the microservice architecture, focusing on frontend integration and ensuring seamless communication between services."
-            ],
-            "technologies": [
-                "Nuxt",
-                "Tailwind CSS",
-                "TypeScript",
-                "Laravel",
-                "Node.js"
-            ]
-        },
-        {
-            "position": "Full Stack Web Developer",
-            "company": "Fyware",
-            "location": "San Luis Potosí",
-            "startDate": "2022-06",
-            "endDate": "2023-06",
-            "responsibilities": [
-                "Facilitated data exchange and integration by designing, implementing, and consuming REST APIs, improving communication between front-end and back-end systems.",
-                "Accelerated project completion by collaborating with multiple technology stacks, infrastructures, and cross-functional teams to develop comprehensive web applications.",
-                "Contributed to the successful launch and maintenance of multiple web applications by planning, developing, testing, deploying, and maintaining features, ensuring reliability and user satisfaction."
-            ],
-            "technologies": [
-                "Vue.js",
-                "Express.js",
-                "MongoDB",
-                ".NET",
-                "Python"
-            ]
-        }
-    ],
-    "education": [
-        {
-            "degree": "IT Engineer",
-            "institution": "Universidad Politécnica de San Luis Potosí",
-            "location": "San Luis Potosí, S.L.P.",
-            "startDate": "2018-08",
-            "endDate": "2023-12"
-        }
-    ],
-    "skills": {
-        "frontend": [
-            "HTML",
-            "CSS",
-            "TypeScript",
-            "Next.js",
-            "React.js",
-            "Nuxt",
-            "Vue.js",
-            "Tailwind CSS"
-        ],
-        "backend": [
-            "PHP",
-            "Laravel",
-            "Node.js",
-            "Express.js",
-            "TypeScript",
-            ".NET",
-            "ORM",
-            "SQL",
-            "MongoDB"
-        ],
-        "softwareDevelopment": [
-            "GIT",
-            "Agile SCRUM",
-            "Unit Testing",
-            "Restful API",
-            "Linux",
-            "Microservices",
-            "CI/CD"
-        ]
+    {
+      "position": "Full Stack Web Developer",
+      "company": "D4T Technologies",
+      "location": "San Luis Potosí",
+      "startDate": "2024-01",
+      "endDate": "2025-02",
+      "responsibilities": [
+        "Supported the project's planning and roadmap execution by applying Specification-Driven Development (SDD) to establish reliable, predictable full-stack behaviors.",
+        "Enhanced user satisfaction and performance by optimizing Nuxt components, enforcing SOLID principles, and utilizing AI-augmented linting to minimize technical debt.",
+        "Played a key role in delivering an intelligent microservice architecture, implementing Model Context Protocol (MCP) servers, Antigravity deployment structures, and RAG pipelines to connect application backends with LLM layers."
+      ],
+      "technologies": [
+        "Nuxt",
+        "Tailwind CSS",
+        "TypeScript",
+        "Laravel",
+        "Node.js",
+        "MCP",
+        "RAG",
+        "Antigravity",
+        "Docker"
+      ]
     },
-    "softSkills": [
-        "Teamwork",
-        "Attention to detail",
-        "Organization",
-        "Problem-solving",
-        "Time management"
+    {
+      "position": "Full Stack Web Developer",
+      "company": "Fyware",
+      "location": "San Luis Potosí",
+      "startDate": "2022-06",
+      "endDate": "2023-06",
+      "responsibilities": [
+        "Facilitated data exchange and integration by designing, implementing, and consuming REST APIs structured around clear Clean Architecture guidelines.",
+        "Accelerated project completion across multiple technology stacks, utilizing modern database optimizations and automated testing workflows to ensure systemic reliability.",
+        "Contributed to the successful launch and maintenance of multiple web applications by planning, developing, testing, deploying, and maintaining features, ensuring high availability."
+      ],
+      "technologies": ["Vue.js", "Express.js", "MongoDB", ".NET", "Python", "PostgreSQL", "GraphQL"]
+    }
+  ],
+  "education": [
+    {
+      "degree": "IT Engineer",
+      "institution": "Universidad Politécnica de San Luis Potosí",
+      "location": "San Luis Potosí, S.L.P.",
+      "startDate": "2018-08",
+      "endDate": "2023-12",
+      "achievements": "Graduated with academic excellence. Recipient of the prestigious national CENEVAL Award for Excellence in EGEL Performance in Software Engineering."
+    }
+  ],
+  "skills": {
+    "frontend": [
+      "HTML",
+      "CSS",
+      "TypeScript",
+      "Next.js",
+      "React.js",
+      "Nuxt",
+      "Vue.js",
+      "Tailwind CSS",
+      "Pinia / Zustand"
     ],
-    "languages": [
-        { "name": "English", "level": "C1" },
-        { "name": "French", "level": "A2" },
-        { "name": "Spanish", "level": "Native" }
+    "backend": [
+      "PHP",
+      "Laravel",
+      "Node.js",
+      "Bun",
+      "Express.js",
+      "TypeScript",
+      ".NET",
+      "ORM",
+      "SQL",
+      "PostgreSQL",
+      "MongoDB"
     ],
-    "courses": [
-        {
-            "title": "Databases",
-            "institution": "Microsoft IT Associate",
-            "startDate": "2021-08",
-            "endDate": "2021-12"
-        },
-        {
-            "title": "NDG Linux Essentials",
-            "institution": "CISCO",
-            "startDate": "2022-01",
-            "endDate": "2022-05"
-        },
-        {
-            "title": "Cybersecurity Essentials",
-            "institution": "CISCO",
-            "startDate": "2022-08",
-            "endDate": "2022-12"
-        }
+    "softwareDevelopment": [
+      "Claude Code / OpenCode",
+      "MCP",
+      "RAG",
+      "SDD",
+      "AI Prompt Engineering",
+      "Clean Code & SOLID Principles",
+      "Clean Architecture",
+      "GIT",
+      "Docker",
+      "Agile SCRUM",
+      "Unit Testing",
+      "Restful API",
+      "Linux",
+      "Microservices",
+      "CI/CD"
     ]
+  },
+  "softSkills": ["Teamwork", "Attention to detail", "Organization", "Problem-solving", "Time management"],
+  "languages": [
+    {
+      "name": "English",
+      "level": "C1"
+    },
+    {
+      "name": "French",
+      "level": "A2"
+    },
+    {
+      "name": "Spanish",
+      "level": "Native"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Databases",
+      "institution": "Microsoft IT Associate",
+      "startDate": "2021-08",
+      "endDate": "2021-12"
+    },
+    {
+      "title": "NDG Linux Essentials",
+      "institution": "CISCO",
+      "startDate": "2022-01",
+      "endDate": "2022-05"
+    },
+    {
+      "title": "Cybersecurity Essentials",
+      "institution": "CISCO",
+      "startDate": "2022-08",
+      "endDate": "2022-12"
+    }
+  ]
 }

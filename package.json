@@ -7,9 +7,9 @@
   ],
   "scripts": {
     "optimize": "tsx --env-file=.env scripts/optimize.ts",
-    "render": "tsx scripts/render.ts",
     "pdf": "tsx scripts/pdf.ts",
-    "start": "npm run optimize && npm run render && npm run pdf"
+    "dev": "npm run dev -w @resume/react-renderer",
+    "start": "npm run optimize && npm run pdf"
   },
   "devDependencies": {
     "tsx": "^4.0.0",

@@ -10,15 +10,4 @@ export const styles = `
       print-color-adjust: exact;
     }
   }
-
-  body {
-    font-family: 'Poppins', sans-serif;
-  }
-
-  @media screen {
-    body {
-      max-width: 8.5in;
-      margin: 0 auto;
-    }
-  }
 `

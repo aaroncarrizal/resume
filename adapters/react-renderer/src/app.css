@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #000000;
+  --color-primary-light: #dbeafe;
+  --color-surface: #f3f4f6;
+  --color-surface-alt: #d1d5db;
+  --color-border: #e5e7eb;
+  --color-text-muted: #6b7280;
+  --font-family-sans: 'Poppins', sans-serif;
+}
+
+@media screen {
+  body {
+    max-width: 8.5in;
+    margin: 0 auto;
+  }
+}
