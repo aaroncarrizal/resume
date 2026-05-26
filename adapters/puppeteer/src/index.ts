@@ -44,7 +44,6 @@ export async function generatePDF(options: PDFOptions): Promise<void> {
       path: options.output,
       format,
       printBackground: true,
-      margin: { top: '0mm', bottom: '0mm', left: '0mm', right: '0mm' },
     })
   } finally {
     await browser.close()
