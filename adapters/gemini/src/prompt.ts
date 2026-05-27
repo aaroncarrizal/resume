@@ -23,8 +23,8 @@ Optimization Strategy by Section:
 - Keyword Density: Naturally weave high-value JD keywords into the responsibilities to prove the candidate has applied these skills in production.
 
 4. skills (Ruthless Prioritization & ATS Mapping)
-- Constraint: Each skill category list (e.g., frontend, backend) MUST have a total character count of 75 characters or fewer (including letters, spaces, commas, and symbols) to ensure strict PDF formatting.
-- Action: Because space is severely limited, you must ruthlessly curate. Reorder and consolidate the lists. Put the exact-match keywords from the JD at the very beginning of the string. Drop secondary/legacy skills that are not mentioned in the JD to respect the 75-character limit. Use standard acronyms (AWS, K8s, GCP) to save space.
+- Constraint: Each skill category (frontend, backend, softwareDevelopment) MUST remain a JSON array of strings. Each array MUST have 12 items or fewer, with each item being 15 characters or fewer, to fit PDF layout.
+- Action: Because space is severely limited, you must ruthlessly curate. Reorder and consolidate the arrays. Put the exact-match keywords from the JD at the very beginning. Drop secondary/legacy skills that are not mentioned in the JD to respect the limit. Use standard acronyms (AWS, K8s, GCP) to save space.
 
 5. softSkills (Cultural Fit)
 - Action: Rephrase and reorder this list to mirror the non-technical competencies, methodologies, and cultural values explicitly requested or heavily implied in the Job Description.

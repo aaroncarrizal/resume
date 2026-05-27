@@ -32,5 +32,20 @@ export async function optimizeCV(
   const jsonMatch = text.match(/```json\s*([\s\S]*?)```/i)
   const jsonString = jsonMatch ? jsonMatch[1].trim() : text
 
-  return JSON.parse(jsonString) as CV
+  const parsed = JSON.parse(jsonString) as CV
+
+  // Normalize skills fields: Gemini may return comma-separated strings instead of arrays
+  if (parsed.skills) {
+    for (const key of ['frontend', 'backend', 'softwareDevelopment'] as const) {
+      const val = parsed.skills[key]
+      if (typeof val === 'string') {
+        parsed.skills[key] = val.split(',').map((s) => s.trim())
+      }
+    }
+  }
+  if (typeof parsed.softSkills === 'string') {
+    parsed.softSkills = parsed.softSkills.split(',').map((s) => s.trim())
+  }
+
+  return parsed
 }
