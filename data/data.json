@@ -69,7 +69,7 @@
       "location": "San Luis Potosí, S.L.P.",
       "startDate": "2018-08",
       "endDate": "2023-12",
-      "achievements": "Graduated with academic excellence. Recipient of the prestigious national CENEVAL Award for Excellence in EGEL Performance in Software Engineering."
+      "achievements": "Graduated with academic excellence. Recipient of the national CENEVAL Award for Excellence in EGEL Performance (Software Engineering), recognizing top-tier mastery of disciplinary and transversal skills in complex, real-world scenarios."
     }
   ],
   "skills": {
@@ -121,8 +121,7 @@
       "Claude Code / OpenCode",
       "MCP / RAG",
       "SDD / TDD",
-      "Harness Engineering",
-      "AI Prompting Engineering"
+      "Harness Engineering"
     ]
   },
   "softSkills": [
@@ -145,19 +144,22 @@
       "title": "Databases",
       "institution": "Microsoft IT Associate",
       "startDate": "2021-08",
-      "endDate": "2021-12"
+      "endDate": "2021-12",
+      "description": "Microsoft IT Associate course. Developed foundational skills in database management, including data modeling, SQL query construction, and relational database concepts."
     },
     {
       "title": "NDG Linux Essentials",
       "institution": "CISCO",
       "startDate": "2022-01",
-      "endDate": "2022-05"
+      "endDate": "2022-05",
+      "description": "CISCO certification course. Acquired core proficiency in the Linux operating system, including command-line navigation, file systems, user management, and basic security concepts."
     },
     {
       "title": "Cybersecurity Essentials",
       "institution": "CISCO",
       "startDate": "2022-08",
-      "endDate": "2022-12"
+      "endDate": "2022-12",
+      "description": "CISCO certification course. Studied fundamental security principles, including threat analysis, network security, and defensive strategies to protect information systems."
     }
   ]
 }

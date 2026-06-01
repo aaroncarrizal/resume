@@ -23,6 +23,7 @@ adapters/
       lib/                # Utility helpers (cn, parseUrl)
 scripts/                 # Thin CLI orchestrators
   helpers/paths.ts       # Centralized path constants
+  export.ts              # data.json + system prompt + JD => output/prompt.txt (manual AI paste)
   optimize.ts            # data.json + JD => Gemini => optimized.json
   pdf.ts                 # SSR render + Puppeteer capture => output/resume.pdf
 data/                    # data.json, optimized.json, jds/*.txt
@@ -38,14 +39,25 @@ data/                    # data.json, optimized.json, jds/*.txt
 | `npm run dev` | Dev server with HMR at http://localhost:3000 |
 | `npm start` | Optimize + PDF in sequence |
 | `npm run start:base` | PDF from data.json (no optimization) |
+| `npm run export` | Combine CV + system prompt + JD into one file for manual Gemini paste |
 
 Flags: `--jd <path>`, `--input <path>`, `--output <path>`, `--format <letter|a4>`, `--base`.
+
+The `--jd` flag also auto-skiips dotfiles (`.gitkeep`).
 
 ## Pipeline
 
 1. Drop a JD into `data/jds/`
 2. `npm run optimize` (reads `data/data.json` + JD, calls Gemini, writes `data/optimized.json`)
 3. `npm run pdf` (reads `data/optimized.json`, renders via React SSR + Puppeteer, writes `output/resume.pdf`)
+
+### Manual alternative (no API key needed)
+
+1. Drop a JD into `data/jds/`
+2. `npm run export` (reads `data/data.json` + system prompt + JD, writes `output/prompt.txt`)
+3. Copy the entire `output/prompt.txt` and paste into Gemini web chat
+4. Paste the returned JSON back into `data/optimized.json`
+5. `npm run pdf` to generate the PDF
 
 To skip optimization and use the base resume directly: `npm run pdf:base` (reads `data/data.json`).
 

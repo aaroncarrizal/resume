@@ -12,7 +12,8 @@
     "dev": "npm run dev -w @resume/react-renderer",
     "dev:base": "npm run dev:base -w @resume/react-renderer",
     "start": "npm run optimize && npm run pdf",
-    "start:base": "npm run pdf:base"
+    "start:base": "npm run pdf:base",
+    "export": "tsx scripts/export.ts"
   },
   "devDependencies": {
     "tsx": "^4.0.0",

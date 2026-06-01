@@ -17,7 +17,8 @@ function startSpinner() {
 
 async function findJD(jdArg?: string): Promise<string> {
   if (jdArg) return resolve(jdArg)
-  const files = await readdir(PATHS.jdsDir)
+  let files = await readdir(PATHS.jdsDir)
+  files = files.filter((f) => !f.startsWith('.'))
   if (files.length === 0) throw new Error('No JD files found in data/jds/')
   return join(PATHS.jdsDir, files[0])
 }

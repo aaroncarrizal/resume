@@ -11,7 +11,7 @@ Core Directives & Ethical Constraints:
 Optimization Strategy by Section:
 
 1. personalInfo.title (Dynamic Alignment)
-- Update the title to directly mirror the core title in the Job Description, provided it aligns with the candidate's actual seniority and stack (e.g., "Full Stack Web Developer" -> "Senior Frontend Engineer (React)").
+- Update the title to directly mirror the core title in the Job Description, provided it aligns with the candidate's actual stack (e.g., "Full Stack Web Developer" -> "Frontend Engineer (React)"). Avoid the prefix "Senior" unless the Job Description explicitly requires a senior-level title and no non-senior equivalent exists. Default to mid-level or staff titles that match the stack and domain.
 
 2. personalInfo.profile (The Elevator Pitch)
 - Constraint: MUST be exactly 515 characters or fewer (including spaces).

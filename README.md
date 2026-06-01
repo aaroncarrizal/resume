@@ -52,6 +52,15 @@ npm run pdf:base     # from data.json directly
 
 Reads the input, renders via React SSR + Puppeteer, writes `output/resume.pdf`.
 
+### Export prompt for manual AI use
+
+```bash
+npm run export                   # uses first JD in data/jds/
+npm run export -- --jd data/jds/example.txt
+```
+
+Reads `data/data.json` + system prompt + JD, writes a single self-contained file to `output/prompt.txt`. Paste the whole thing into Gemini web chat when API quota is limited.
+
 ### Full pipeline
 
 ```bash
