@@ -22,7 +22,7 @@ async function main() {
   }
 
   const jdPath = await findJD(get('--jd'))
-  const outputPath = get('--output', join(PATHS.output, 'prompt.txt'))
+  const outputPath = get('--output', join(PATHS.output, 'manual-optimization.md'))
 
   const [cv, jdText] = await Promise.all([
     readJSON<CV>(PATHS.dataJson),
@@ -30,13 +30,18 @@ async function main() {
   ])
 
   const prompt = [
-    '=== SYSTEM PROMPT ===',
+    '## System Prompt',
+    '',
     optimizePrompt,
     '',
-    '=== CV (JSON) ===',
-    JSON.stringify(cv, null, 2),
+    '## CV (JSON)',
     '',
-    '=== JOB DESCRIPTION ===',
+    '```json',
+    JSON.stringify(cv, null, 2),
+    '```',
+    '',
+    '## Job Description',
+    '',
     jdText,
     '',
   ].join('\n')
