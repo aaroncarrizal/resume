@@ -1,6 +1,7 @@
 import { GoogleGenAI } from '@google/genai'
 import type { CV } from '@resume/core'
-export { optimizePrompt } from './prompt'
+import { optimizePrompt } from './prompt'
+export { optimizePrompt }
 
 export interface GeminiConfig {
   apiKey: string
