@@ -82,7 +82,14 @@ Do NOT include:
 - Do not include any new hyperlinks.
 - Do not include any new social links.
 
-4. Length Constraints
+4. No Markdown Syntax Inside JSON Values
+- All string values must be plain text.
+- Do NOT wrap URLs in []() markdown link syntax.
+- Do NOT use **bold**, *italic*, backticks, or any other markdown formatting inside JSON strings.
+- URL fields (github, linkedIn, webpage) must be bare URL strings only.
+- Any []() characters injected into JSON values will corrupt the structure.
+
+5. Length Constraints
 
 personalInfo.profile:
 - Maximum 515 characters including spaces.
