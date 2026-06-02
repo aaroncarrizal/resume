@@ -23,7 +23,7 @@ adapters/
       lib/                # Utility helpers (cn, parseUrl)
 scripts/                 # Thin CLI orchestrators
   helpers/paths.ts       # Centralized path constants
-  export.ts              # data.json + system prompt + JD => output/prompt.txt (manual AI paste)
+  export.ts              # data.json + system prompt + JD => output/manual-optimization.md (manual AI paste)
   optimize.ts            # data.json + JD => Gemini => optimized.json
   pdf.ts                 # SSR render + Puppeteer capture => output/resume.pdf
 data/                    # data.json, optimized.json, jds/*.txt
@@ -55,8 +55,8 @@ Env: `SCALE=<number>` — Puppeteer scale factor (e.g. `SCALE=0.92 npm run pdf` 
 ### Manual alternative (no API key needed)
 
 1. Drop a JD into `data/jds/`
-2. `npm run export` (reads `data/data.json` + system prompt + JD, writes `output/prompt.txt`)
-3. Copy the entire `output/prompt.txt` and paste into Gemini web chat
+2. `npm run export` (reads `data/data.json` + system prompt + JD, writes `output/manual-optimization.md`)
+3. Copy the entire `output/manual-optimization.md` and paste into Gemini web chat
 4. Paste the returned JSON back into `data/optimized.json`
 5. `npm run pdf` to generate the PDF
 
