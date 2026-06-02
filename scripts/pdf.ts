@@ -41,6 +41,10 @@ async function main() {
   const inputPath = isBase ? PATHS.dataJson : get('--input', PATHS.optimized)
   const outputHtmlPath = get('--output', PATHS.outputHtml)
   const format = get('--format', 'letter') as 'letter' | 'a4'
+  const scale = process.env.SCALE ? parseFloat(process.env.SCALE) : undefined
+  if (scale !== undefined && (isNaN(scale) || scale <= 0)) {
+    console.warn(`Invalid SCALE "${process.env.SCALE}", defaulting to 1.0`)
+  }
 
   const cvPath = existsSync(inputPath) ? inputPath : PATHS.dataJson
   const cv: CV = JSON.parse(readFileSync(cvPath, 'utf-8'))
@@ -70,7 +74,8 @@ async function main() {
   writeFileSync(outputHtmlPath, html, 'utf-8')
   console.log(`Rendered HTML to ${outputHtmlPath}`)
 
-  await generatePDF({ input: outputHtmlPath, output: outputPdfPath, format })
+  await generatePDF({ input: outputHtmlPath, output: outputPdfPath, format, scale })
+  if (scale) console.log(`Scale:  ${scale}x`)
   console.log(`PDF generated: ${outputPdfPath}`)
 }
 

@@ -43,7 +43,8 @@ data/                    # data.json, optimized.json, jds/*.txt
 
 Flags: `--jd <path>`, `--input <path>`, `--output <path>`, `--format <letter|a4>`, `--base`.
 
-The `--jd` flag also auto-skiips dotfiles (`.gitkeep`).
+The `--jd` flag also auto-skiips dotfiles (`.gitkeep`).  
+Env: `SCALE=<number>` — Puppeteer scale factor (e.g. `SCALE=0.92 npm run pdf` shrinks to fit one page).
 
 ## Pipeline
 

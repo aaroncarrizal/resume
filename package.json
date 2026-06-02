@@ -7,8 +7,8 @@
   ],
   "scripts": {
     "optimize": "tsx --env-file=.env scripts/optimize.ts",
-    "pdf": "tsx scripts/pdf.ts",
-    "pdf:base": "tsx scripts/pdf.ts --base",
+    "pdf": "tsx --env-file=.env scripts/pdf.ts",
+    "pdf:base": "tsx --env-file=.env scripts/pdf.ts --base",
     "dev": "npm run dev -w @resume/react-renderer",
     "dev:base": "npm run dev:base -w @resume/react-renderer",
     "start": "npm run optimize && npm run pdf",

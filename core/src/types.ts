@@ -45,7 +45,8 @@ export interface Course {
   title: string
   institution: string
   startDate: string
-  endDate: string
+  endDate: string,
+  description: string
 }
 
 export interface CV {

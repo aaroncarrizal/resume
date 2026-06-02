@@ -6,6 +6,7 @@ export interface PDFOptions {
   input: string
   output: string
   format?: 'letter' | 'a4'
+  scale?: number
 }
 
 function resolveUrl(input: string): string {
@@ -43,6 +44,7 @@ export async function generatePDF(options: PDFOptions): Promise<void> {
     await page.pdf({
       path: options.output,
       format,
+      scale: options.scale ?? 1,
       printBackground: true,
     })
   } finally {

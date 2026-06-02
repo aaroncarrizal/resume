@@ -46,11 +46,14 @@ Reads `data/data.json` + specified JD, writes `data/optimized.json`.
 ### Generate PDF
 
 ```bash
-npm run pdf          # from optimized.json
-npm run pdf:base     # from data.json directly
+npm run pdf               # from optimized.json
+npm run pdf:base          # from data.json directly
+SCALE=0.92 npm run pdf    # shrink to fit one page
+SCALE=1.05 npm run pdf    # enlarge to fill space
 ```
 
-Reads the input, renders via React SSR + Puppeteer, writes `output/resume.pdf`.
+Reads the input, renders via React SSR + Puppeteer, writes `output/resume.pdf`.  
+`SCALE` env var sets Puppeteer's native scale factor (`1.0` default).
 
 ### Export prompt for manual AI use
 
